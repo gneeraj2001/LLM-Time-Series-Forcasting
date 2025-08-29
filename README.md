@@ -2,7 +2,7 @@
 
 ## Methodology
 
-We forecast next-day customer support ticket volumes using a lightweight time-series modeling approach that plugs directly into an LLM backbone — no tokenization, no text.
+I forecast next-day customer support ticket volumes using a lightweight time-series modeling approach that plugs directly into an LLM backbone — no tokenization, no text.
 
 ### Goal
 
