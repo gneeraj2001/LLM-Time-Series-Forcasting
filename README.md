@@ -13,7 +13,7 @@ Produce:
 
 ### Architecture Overview
 
-We reuse a pretrained **causal LLM** (default: `Qwen2.5-0.5B`, optional: `Mistral-7B` in 4-bit) and fine-tune it using **LoRA** adapters.  
+I reuse a pretrained **causal LLM** (default: `Qwen2.5-0.5B`, optional: `Mistral-7B` in 4-bit) and fine-tune it using **LoRA** adapters.  
 Instead of text input, we feed **numerical “time tokens”** via `inputs_embeds`.
 
 Each day is encoded as:
