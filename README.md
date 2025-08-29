@@ -2,7 +2,7 @@
 
 ## Methodology
 
-I forecast next-day customer support ticket volumes using a lightweight time-series modeling approach that plugs directly into an LLM backbone — no tokenization, no text.
+I forecast next-day customer support ticket volumes using a lightweight time-series modeling approach that plugs directly into an LLM backbone : no tokenization, no text.
 
 ### Goal
 
@@ -17,7 +17,8 @@ We reuse a pretrained **causal LLM** (default: `Qwen2.5-0.5B`, optional: `Mistra
 Instead of text input, we feed **numerical “time tokens”** via `inputs_embeds`.
 
 Each day is encoded as:
-x_t = E_value(y_t) + E_time(calendar_t) + E_ctx(context_t) + positional
+$x_t = E_\text{value}(y_t) + E_\text{time}(t) + E_\text{ctx}(t) + \text{positional}$.
+
 
 
 #### Embedding Components
